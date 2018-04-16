@@ -1,0 +1,68 @@
+/* body style */
+*{
+	margin: 0 auto;
+ 	box-sizing: border-box; 
+ 	font-family: avenir;
+ 	text-align: center;
+}
+
+header{
+	background-color: white;
+	overflow: auto;
+}
+
+main{
+	background-color: lightblue;
+}
+
+footer{
+	background-color: lightpink;
+}
+
+main, section, article{
+	padding: 2.5em;
+	overflow: auto;
+}
+
+nav, footer{
+	margin: 0 auto;
+	padding: 1em;
+	text-align: center;
+}
+
+/* ? style */
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+/* logo style */
+.logo {
+	width: 35%;
+	padding: 5em;
+	background-color: gray;
+}
+
+/* navigatie style */
+.hoofdmenu {
+	background-color: white;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.hoofdmenu ul li{
+	display: inline;
+	list-style: none;
+	padding: 2.5em;
+}
+
+/* navigatie links style */
+.hoofdmenu a {
+	color: #353535;
+	text-decoration: none;
+}
+
+.hoofdmenu a:hover {
+	color: #A5003C;
+	text-decoration: none;
+}
