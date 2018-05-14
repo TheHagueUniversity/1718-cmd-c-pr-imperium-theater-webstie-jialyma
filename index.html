@@ -5,6 +5,14 @@
   <meta charset="UTF-8">
   <title>Imperium Theater</title>
   <link rel="stylesheet" href="css/style_rewrite.css">
+  
+  <script type="text/javascript">
+  	function topFunction() {
+    	document.body.scrollTop = 0; // For Safari
+    	document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+	}
+  </script>
+
 </head>
 
 <body>
@@ -13,57 +21,139 @@
 		<header>
     		<nav class="hoofdmenu">
 				<ul>
-					<li><a href="#OVERONS"> OVER ONS </a></li>
+					<li><a href="overons.html"> OVER ONS </a></li>
 					<li><a href="#VOORSTELLINGEN"> VOORSTELLINGEN </a></li>
-					<li><a href="#THEATERHUREN"> THEATER HUREN </a></li>
+					<li><a href="#" id="disablelink"> THEATER HUREN </a></li>
 					<li><a href="#FOTOBOEK"> FOTOBOEK </a></li>
-					<li><a href="#CONTACT"> CONTACT </a></li>
-					<li><a href="#WORDLIDLOGIN"> WORD LID / LOG IN </a></li>
+					<li><a href="contact.html"> CONTACT </a></li>
+					<li><a href="wordlid_login.html"> WORD LID / LOG IN </a></li>
+					<!-- zoek functie (nog niet actief)
+						<input type="text" name="search" placeholder="ZOEKEN..."> -->
 				</ul>
 			</nav>
-
+			
+			<br />
 			<div class="logo">
-				<h1>LOGO<br />Imperium Theater</h1>
+				<a href="index.html"><img src="img/logo_imperium.jpg"></a>
 			</div> 
 		</header>
-	 
+		
 	 	<main>
 			<section class="banner">
-				<h1>BANNER</h1>
-				<p>Banner tekst i guess anders komt wel iets anders tho.</p>
+				<a href="wordlid_login.html"><img src="img/banner_03.jpg"></a>
 			</section>
-			
-			<section class="voorstellingen">
-				<h1>Voorstellingen deze week</h1>
-				<ul class="voorstellingenlist">
-					<li>
-						<h1>Theatervoorstelling</h1>
-						<p>Dit is een hele leuke voorstelling</p>
-					</li>
-					<li>
-						<h1>Theatervoorstelling 2</h1>
-						<p>Dit is een nog leukere voorstelling</p>
-					</li>
-				</ul>
-			</section>
+			<br />
+			<br />
+			<br />
+			<br />
+			<section class="p_voorstellingen">
+				<h1>POPULAIRE VOORSTELLINGEN</h1>
+				<br />
+				<br /> 
+				<div class="voorstellingenlist">
+					
+					<div class="voorstellingcolom">
+						<div class="voorstellingcontent">
+							<img src="img/voorstellingen/0001.jpg">
+							<h3>DOGVILLE</h1>
+							<p>JANUARI - FEBRUARI</p>
+						</div>
+					</div>
 
+					<div class="voorstellingcolom">
+						<div class="voorstellingcontent">
+							<img src="img/voorstellingen/0003.jpg">
+							<h3>IS THERE LIFE ON MARS?</h1>
+							<p>FEBRUARI - MAART</p>
+						</div>
+					</div>
+
+					<div class="voorstellingcolom">
+						<div class="voorstellingcontent">
+							<img src="img/voorstellingen/0004.jpg">
+							<h3>KAATJE IS VERDRONKEN</h1>
+							<p>MAART - APRIL</p>
+						</div>
+					</div>
+
+					<div class="voorstellingcolom">
+						<div class="voorstellingcontent">
+							<img src="img/voorstellingen/0005.jpg">
+							<h3>DE LANGE NASLEEP</h1>
+							<p>APRIL - MEI</p>
+						</div>
+					</div>
+
+					<div class="voorstellingcolom">
+						<div class="voorstellingcontent">
+							<img src="img/voorstellingen/0007.jpg">
+							<h3>AUGUSTUS: OKLAHOMA</h1>
+							<p>MEI - JUNI</p>
+						</div>
+					</div>
+				
+				</div>	
+					
+			</section>
+				<br />
+				<br />
+				<br />
+				<br />
+					<hr>
+				<br />
+				<br />
+			<section class="overimperium">
+				<br />
+				<br />
+					<img src="img/overimperium.jpg">
+				<br />
+					<h1>OVER TONEEL GROEP IMPERIUM</h1>
+				<p>
+					Toneelgroep Imperium is een actief amateurtheatergezelschap uit Leiden.<br /> Imperium is opgericht in 1957 en telt ongeveer 60 actieve leden.<br /> Wij hebben ook ons eigen theater, gevestigd in het hart van de Leidse binnenstad. <br /> Het theater wordt regelmatig verhuurd aan andere gezelschappen...
+				<br />
+				<br />
+					<a href="overons.html"><button class="leesmeer">Lees meer ... </button></a> 
+				</p>
+
+			</section>
+			<br />
+			<br />
+
+
+
+
+			<!--
 			<aside>
 				<article class="leden">
 					<h1>Ledendag 1 april</h1>
 					<p>Op 1 april staat de nieuwe ledendag gepland<p>
 				</article>
 			</aside>
+			
 
 			<form method="GET" id="nieuwsbrief">
 
 			</form>
+			-->
 		</main>
-	  
-		<footer>
-			<h2>Theater Imperium</h2>
-			<p>Oude Vest 33e</p>
-		<footer>
+
 	</div>
+		<footer>
+			<div class="rectangle">
+				<a href="https://www.facebook.com/ToneelgroepImperium?fref=ts"><img src="img/facebook.png"></a>
+				<a href="https://twitter.com/imperiumtheater"><img src="img/twitter.png"></a>
+			</div>
+			<br />
+			<br />
+				<h3>Theater Imperium</h2>
+				<p>Oude Vest 33e</p>
+				<p>2312 XR Leiden</p>
+				<p>071 - 5141035</p>
+			<br />
+			<br />
+			<br />
+				<button onclick="topFunction()" class="buttontop">SCROL NAAR BOVEN</button>
+		<footer>
   
 </body>
 

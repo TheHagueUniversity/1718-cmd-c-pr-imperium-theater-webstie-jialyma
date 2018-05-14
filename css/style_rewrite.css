@@ -1,68 +1,257 @@
-/* body style */
+/* !! BASIS INSTELLING VOOR ALLE PAGINA'S */
 *{
 	margin: 0 auto;
  	box-sizing: border-box; 
  	font-family: avenir;
  	text-align: center;
+ 	color: #353535;
 }
 
 header{
 	background-color: white;
+	
+}
+
+main, section, article{
+	padding: 20px;
 	overflow: auto;
 }
 
 main{
-	background-color: lightblue;
+	background-color: #FFFFFF;
+	padding: 20px 0;
+
 }
 
 footer{
-	background-color: lightpink;
-}
-
-main, section, article{
-	padding: 2.5em;
-	overflow: auto;
-}
-
-nav, footer{
-	margin: 0 auto;
-	padding: 1em;
+	background-color: #FFFFFF;
+	color: #FFFFFF;
+	width: 100%;
+	height: 40px;
+	margin:0 auto;
 	text-align: center;
 }
 
-/* ? style */
+
+nav {
+	margin: 0 auto;
+	padding: 20px;
+	text-align: center;
+}
+
+
+/* typografie style */
+h1 {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+h2 {
+	font-size: 25px;
+}
+
+h3 {
+	font-size: 20px;
+}
+
+p {
+	font-size: 16px;
+}
+
+
+/* container (alles binnen body) */
 .container {
 	width: 80%;
 	margin: 0 auto;
 }
 
-/* logo style */
-.logo {
-	width: 35%;
-	padding: 5em;
-	background-color: gray;
-}
-
-/* navigatie style */
+/* HEADER SECTIE */
+/* hoofdmenu navigatie instelling */
 .hoofdmenu {
-	background-color: white;
-	width: 100%;
-	margin: 0 auto;
+	background-color: #FFFFFF;
+	width: 80%;
+	position: fixed;
+	padding: 20px 20px;
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+	overflow: hidden;
 }
 
 .hoofdmenu ul li{
-	display: inline;
+	display: inline-block;
 	list-style: none;
-	padding: 2.5em;
+
 }
 
-/* navigatie links style */
+/* dit zorgt voor dat navigatiemenu goed centreert */
+ul {
+	-webkit-padding-start: 0px;
+}
+
+
+/* hoofdmenu navigatie vormgeving */
 .hoofdmenu a {
 	color: #353535;
 	text-decoration: none;
+	padding: 0 50px;
 }
 
 .hoofdmenu a:hover {
 	color: #A5003C;
-	text-decoration: none;
+
+}
+
+.hoofdmenu a.active {
+	color: #A5003C;
+}
+
+/* 'THEATER HUREN' link disable  */
+#disablelink {
+	color: #9C9B9B;
+	cursor: not-allowed;
+}
+
+
+/* logo instelling */
+.logo {
+	width: 35%;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	background-color: #FFFFFF;
+}
+
+
+/* !! FOOTER: social media gedeelte + scroll to top button */
+.rectangle {
+	width: 100%;
+	max-height: 50px;
+	background-color: #A5003C;
+	margin: 0;
+	padding: 5px;
+}
+
+.rectangle img {
+	padding: 5px;
+	width: 40px;
+}
+
+.buttontop {
+	border: 1px solid;
+	border-radius: 5px;
+	background-color: #FFFFFF;
+	padding: 5px 15px;
+	font-size: 14px;
+	border-color: #9C9B9B;
+	color: #353535;
+	cursor: pointer;
+}
+
+.buttontop:hover {
+	background-color: #353535;
+	color: #FFFFFF;
+}
+
+
+/* !! HOME PAGINA - MAIN SECTION */
+/* banner instelling */
+.banner {
+	padding: 0;
+	overflow: hidden;
+}
+
+.banner img{
+	width: 100%;
+}
+
+
+
+/* populaire voorstellingen */
+.p_voorstellingen {
+	color: #353535;
+	padding: 0;
+}
+
+.voorstellingcolom {
+	float: left;
+	width: 20%;
+	padding: 5px;
+	height: auto;
+}
+
+.voorstellingcolom:hover {
+	cursor: pointer;
+	color: #A5003C;
+}
+
+.voorstellingcontent {
+	padding: 0;
+}
+
+
+.voorstellingcontent h3{
+	padding-top: 5px;
+}
+
+
+.voorstellingcontent img{
+	max-width: 80%;
+}
+
+hr {
+	max-width: 100%;
+	border: 1px solid #A5003C;
+}
+
+/* 'over imperium' - sectie */
+.overimperium {
+	text-align: center;
+}
+
+.overimperium img {
+	text-align: right;
+	float: right;
+	width: 50%;
+	padding: 10px;
+}
+
+.overimperium h1 {
+	display: block;
+	float: left;
+	text-align: left;
+	padding-left: 10px;
+}
+
+
+.overimperium p {
+	font-size: 16px;
+	display: block;
+	float: left;
+	text-align: left;
+	padding-left: 10px;
+	padding-top: 20px;
+}
+
+.overimperium button {
+	border: 1px solid;
+	border-radius: 5px;
+	background-color: #FFFFFF;
+	padding: 5px 15px;
+	font-size: 14px;
+	border-color: #A5003C;
+	color: #A5003C;
+	cursor: pointer;
+}
+
+.overimperium button:hover {
+	background-color: #A5003C;
+	color: #FFFFFF;
+}
+
+
+
+/* !! CONTACT PAGINA - Googlemaps */
+.googlemaps iframe {
+	width: 90%;
+	height: 550px;
 }
